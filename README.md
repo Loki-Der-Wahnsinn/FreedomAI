@@ -1,18 +1,25 @@
-## Release: Singularity v1.0
+# FreedomAI
 
-This release marks the transition of FreedomAI from a local simulation to a globally-aware agentic network.
+A small experimental Python multi-agent/team-orchestration prototype with a console entry point and an optional FastAPI dashboard.
 
-### New Features
+## What the code currently does
 
-- **Neural Command Dashboard**: A FastAPI-based real-time monitor. Run with `python src/dashboard.py`.
-- **Global Reasoning Engine**: Enhanced LLM provider that simulates cross-node intelligence syncing.
-- **Autonomous Mission Protocols**: Agents now operate with high-level mission intent rather than simple task lists.
+- `src/main.py` creates example teams and accepts console commands.
+- `src/core/commander.py` routes commands using simple keyword matching.
+- `src/core/llm_provider.py` includes a `MockLLM` and a placeholder `GeminiLLM`; it does not currently implement a live Gemini API call.
+- `src/dashboard.py` exposes status, team, and command endpoints. Some displayed status values are simulated.
 
-## Deployment Instructions
+This is a learning/prototype project, not a production multi-node agent network. The console entry point can be started from the repository root with `python -m pip install -r requirements.txt` followed by `python src/main.py`.
 
-1. **Local Node**: `pip install -r requirements.txt`
-2. **Launch Core**: `python src/main.py`
-3. **Launch UI**: `python src/dashboard.py` (Access at http://localhost:8080)
+## Dashboard safety
 
----
-*FreedomAI is dedicated to the user. Finalize. Proliferate. Evolve.*
+The dashboard currently binds to `0.0.0.0:8080` without authentication. Do not expose it to an untrusted network or the public internet. Its FastAPI/Uvicorn dependencies are not listed in the current `requirements.txt`, so dashboard setup is not yet turnkey.
+
+## Related public experiments
+
+- [AIO-Core-Alpha](https://github.com/Loki-Der-Wahnsinn/AIO-Core-Alpha) — experimental desktop companion and worker-node project.
+- [EvoLoki SuperKI](https://github.com/Loki-Der-Wahnsinn/EvoLoki_SuperKI) — experimental model-provider, Ollama-worker, and agent components.
+
+## License
+
+No license is currently provided. Public visibility allows you to view this repository; it does not grant permission to reuse, modify, or distribute its contents.
