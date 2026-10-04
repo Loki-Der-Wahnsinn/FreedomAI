@@ -20,7 +20,7 @@ The dashboard currently binds to `0.0.0.0:8080` without authentication. Do not e
 This project is relevant to searches for **Python AI agents**, **multi-agent orchestration**, **agent teams**, **LLM prototypes**, and **FastAPI dashboards**. Its current command routing and mock provider are simple prototype components; it does not implement autonomous self-improvement.
 ## Fenrir-Alpha
 
-A separate, private AI-orchestration project has a limited [public overview](https://github.com/Loki-Der-Wahnsinn/EvoLoki_SuperKI/blob/main/FENRIR_ALPHA_OVERVIEW.md). The implementation and operational data remain private.
+A separate, private AI-orchestration project has a curated [public overview](https://github.com/Loki-Der-Wahnsinn/EvoLoki_SuperKI/blob/main/FENRIR_ALPHA_OVERVIEW.md) and a concise [shared context for AI and human contributors](https://github.com/Loki-Der-Wahnsinn/EvoLoki_SuperKI/blob/main/FENRIR_PUBLIC_CONTEXT.md). The implementation and operational data remain private.
 
 ## Related public experiments
 
