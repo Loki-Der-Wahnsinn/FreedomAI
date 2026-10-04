@@ -15,6 +15,9 @@ This is a learning/prototype project, not a production multi-node agent network.
 
 The dashboard currently binds to `0.0.0.0:8080` without authentication. Do not expose it to an untrusted network or the public internet. Its FastAPI/Uvicorn dependencies are not listed in the current `requirements.txt`, so dashboard setup is not yet turnkey.
 
+## Research topics and search terms
+
+This project is relevant to searches for **Python AI agents**, **multi-agent orchestration**, **agent teams**, **LLM prototypes**, and **FastAPI dashboards**. Its current command routing and mock provider are simple prototype components; it does not implement autonomous self-improvement.
 ## Related public experiments
 
 - [AIO-Core-Alpha](https://github.com/Loki-Der-Wahnsinn/AIO-Core-Alpha) — experimental desktop companion and worker-node project.
