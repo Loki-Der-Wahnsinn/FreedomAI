@@ -5,3 +5,28 @@ __pycache__/
 dist/
 build/
 .vscode/
+# Local credentials and environment configuration
+.env.*
+!.env.example
+credentials.json
+token.json
+secrets.json
+service-account*.json
+client_secret*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python-generated files, runtime state, and downloaded weights
+*.pyo
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.gguf
+*.safetensors
+*.ckpt
+*.pt
+.venv/
+venv/
